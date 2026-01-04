@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom Gifts Animations */
+html,
+body,
+#root {
+  background-color: #060b16;
+  min-height: 100%;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.5s ease-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.checkout-input {
+  @apply bg-gray-800 border border-white/10 rounded-lg px-4 py-3
+         text-white outline-none placeholder-gray-500
+         focus:border-blue-400 transition;
+}
